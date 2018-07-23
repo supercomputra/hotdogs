@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EA1DBCD2105969600F4E6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA1DBCC2105969600F4E6E1 /* AppDelegate.swift */; };
+		6EA1DBCF2105969600F4E6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA1DBCE2105969600F4E6E1 /* ViewController.swift */; };
+		6EA1DBD22105969600F4E6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBD02105969600F4E6E1 /* Main.storyboard */; };
+		6EA1DBD72105969800F4E6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBD62105969800F4E6E1 /* Assets.xcassets */; };
+		6EA1DBDA2105969800F4E6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBD82105969800F4E6E1 /* LaunchScreen.storyboard */; };
+		6EA1DC00210599A100F4E6E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBFF210599A100F4E6E1 /* GoogleService-Info.plist */; };
+		6EA1DC01210599A100F4E6E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBFF210599A100F4E6E1 /* GoogleService-Info.plist */; };
+		6EA1DC02210599A100F4E6E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EA1DBFF210599A100F4E6E1 /* GoogleService-Info.plist */; };
+		84F8E7D46A72FAE5B9FB26AB /* Pods_HotdogsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2374F13F83F72D85B064BF /* Pods_HotdogsUITests.framework */; };
+		AC12611F3C29740ED064FD15 /* Pods_Hotdogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E821205C189BF720F6642A1 /* Pods_Hotdogs.framework */; };
+		D793E4C367FB4594B0905905 /* Pods_HotdogsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C78C7100CBB45A1C1845A57 /* Pods_HotdogsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EA1DBE12105969800F4E6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA1DBC12105969600F4E6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA1DBC82105969600F4E6E1;
+			remoteInfo = Hotdogs;
+		};
+		6EA1DBEC2105969800F4E6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA1DBC12105969600F4E6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA1DBC82105969600F4E6E1;
+			remoteInfo = Hotdogs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29E98BAE3BC389F1F8A7DDF9 /* Pods-Hotdogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotdogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotdogs/Pods-Hotdogs.release.xcconfig"; sourceTree = "<group>"; };
+		2B5AE91A924FF92F99CBAA57 /* Pods-HotdogsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotdogsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotdogsTests/Pods-HotdogsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E821205C189BF720F6642A1 /* Pods_Hotdogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotdogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA1DBC92105969600F4E6E1 /* Hotdogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotdogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA1DBCC2105969600F4E6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EA1DBCE2105969600F4E6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EA1DBD12105969600F4E6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EA1DBD62105969800F4E6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EA1DBD92105969800F4E6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EA1DBDB2105969800F4E6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA1DBE02105969800F4E6E1 /* HotdogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotdogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA1DBEB2105969800F4E6E1 /* HotdogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotdogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA1DBFF210599A100F4E6E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		79CF24BD25B9571066693C87 /* Pods-HotdogsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotdogsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotdogsTests/Pods-HotdogsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95633122B47ED2434266E134 /* Pods-HotdogsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotdogsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotdogsUITests/Pods-HotdogsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C78C7100CBB45A1C1845A57 /* Pods_HotdogsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotdogsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6AFD999E13C083BD46E698 /* Pods-HotdogsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotdogsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotdogsUITests/Pods-HotdogsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2374F13F83F72D85B064BF /* Pods_HotdogsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotdogsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E3A7B85FE01440C49D2009 /* Pods-Hotdogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotdogs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hotdogs/Pods-Hotdogs.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EA1DBC62105969600F4E6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC12611F3C29740ED064FD15 /* Pods_Hotdogs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBDD2105969800F4E6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D793E4C367FB4594B0905905 /* Pods_HotdogsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBE82105969800F4E6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F8E7D46A72FAE5B9FB26AB /* Pods_HotdogsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EA1DBC02105969600F4E6E1 = {
+			isa = PBXGroup;
+			children = (
+				6EA1DBCB2105969600F4E6E1 /* Hotdogs */,
+				6EA1DBCA2105969600F4E6E1 /* Products */,
+				8D3C76D3109F20181CCC10A9 /* Pods */,
+				EF576587D3A1C822A062F671 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EA1DBCA2105969600F4E6E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EA1DBC92105969600F4E6E1 /* Hotdogs.app */,
+				6EA1DBE02105969800F4E6E1 /* HotdogsTests.xctest */,
+				6EA1DBEB2105969800F4E6E1 /* HotdogsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EA1DBCB2105969600F4E6E1 /* Hotdogs */ = {
+			isa = PBXGroup;
+			children = (
+				6EA1DBCC2105969600F4E6E1 /* AppDelegate.swift */,
+				6EA1DBCE2105969600F4E6E1 /* ViewController.swift */,
+				6EA1DBD02105969600F4E6E1 /* Main.storyboard */,
+				6EA1DBD62105969800F4E6E1 /* Assets.xcassets */,
+				6EA1DBD82105969800F4E6E1 /* LaunchScreen.storyboard */,
+				6EA1DBDB2105969800F4E6E1 /* Info.plist */,
+				6EA1DBFF210599A100F4E6E1 /* GoogleService-Info.plist */,
+			);
+			path = Hotdogs;
+			sourceTree = "<group>";
+		};
+		8D3C76D3109F20181CCC10A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7E3A7B85FE01440C49D2009 /* Pods-Hotdogs.debug.xcconfig */,
+				29E98BAE3BC389F1F8A7DDF9 /* Pods-Hotdogs.release.xcconfig */,
+				79CF24BD25B9571066693C87 /* Pods-HotdogsTests.debug.xcconfig */,
+				2B5AE91A924FF92F99CBAA57 /* Pods-HotdogsTests.release.xcconfig */,
+				AD6AFD999E13C083BD46E698 /* Pods-HotdogsUITests.debug.xcconfig */,
+				95633122B47ED2434266E134 /* Pods-HotdogsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF576587D3A1C822A062F671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E821205C189BF720F6642A1 /* Pods_Hotdogs.framework */,
+				9C78C7100CBB45A1C1845A57 /* Pods_HotdogsTests.framework */,
+				AE2374F13F83F72D85B064BF /* Pods_HotdogsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EA1DBC82105969600F4E6E1 /* Hotdogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA1DBF42105969800F4E6E1 /* Build configuration list for PBXNativeTarget "Hotdogs" */;
+			buildPhases = (
+				45C4BAE98E2FCD24522A8970 /* [CP] Check Pods Manifest.lock */,
+				6EA1DBC52105969600F4E6E1 /* Sources */,
+				6EA1DBC62105969600F4E6E1 /* Frameworks */,
+				6EA1DBC72105969600F4E6E1 /* Resources */,
+				64DE63697EFE55CD9B05BA9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hotdogs;
+			productName = Hotdogs;
+			productReference = 6EA1DBC92105969600F4E6E1 /* Hotdogs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EA1DBDF2105969800F4E6E1 /* HotdogsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA1DBF72105969800F4E6E1 /* Build configuration list for PBXNativeTarget "HotdogsTests" */;
+			buildPhases = (
+				DD8948C0254ED01AA4D36E28 /* [CP] Check Pods Manifest.lock */,
+				6EA1DBDC2105969800F4E6E1 /* Sources */,
+				6EA1DBDD2105969800F4E6E1 /* Frameworks */,
+				6EA1DBDE2105969800F4E6E1 /* Resources */,
+				1D19162877780C8E2324EE1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA1DBE22105969800F4E6E1 /* PBXTargetDependency */,
+			);
+			name = HotdogsTests;
+			productName = HotdogsTests;
+			productReference = 6EA1DBE02105969800F4E6E1 /* HotdogsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EA1DBEA2105969800F4E6E1 /* HotdogsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA1DBFA2105969800F4E6E1 /* Build configuration list for PBXNativeTarget "HotdogsUITests" */;
+			buildPhases = (
+				38555A59F9048172A4E3F063 /* [CP] Check Pods Manifest.lock */,
+				6EA1DBE72105969800F4E6E1 /* Sources */,
+				6EA1DBE82105969800F4E6E1 /* Frameworks */,
+				6EA1DBE92105969800F4E6E1 /* Resources */,
+				2C679835DD224173A6F2B4A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA1DBED2105969800F4E6E1 /* PBXTargetDependency */,
+			);
+			name = HotdogsUITests;
+			productName = HotdogsUITests;
+			productReference = 6EA1DBEB2105969800F4E6E1 /* HotdogsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EA1DBC12105969600F4E6E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Wiyoza;
+				TargetAttributes = {
+					6EA1DBC82105969600F4E6E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6EA1DBDF2105969800F4E6E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6EA1DBC82105969600F4E6E1;
+					};
+					6EA1DBEA2105969800F4E6E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6EA1DBC82105969600F4E6E1;
+					};
+				};
+			};
+			buildConfigurationList = 6EA1DBC42105969600F4E6E1 /* Build configuration list for PBXProject "Hotdogs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EA1DBC02105969600F4E6E1;
+			productRefGroup = 6EA1DBCA2105969600F4E6E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EA1DBC82105969600F4E6E1 /* Hotdogs */,
+				6EA1DBDF2105969800F4E6E1 /* HotdogsTests */,
+				6EA1DBEA2105969800F4E6E1 /* HotdogsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EA1DBC72105969600F4E6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA1DBDA2105969800F4E6E1 /* LaunchScreen.storyboard in Resources */,
+				6EA1DC00210599A100F4E6E1 /* GoogleService-Info.plist in Resources */,
+				6EA1DBD72105969800F4E6E1 /* Assets.xcassets in Resources */,
+				6EA1DBD22105969600F4E6E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBDE2105969800F4E6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA1DC01210599A100F4E6E1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBE92105969800F4E6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA1DC02210599A100F4E6E1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D19162877780C8E2324EE1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HotdogsTests/Pods-HotdogsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HotdogsTests/Pods-HotdogsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C679835DD224173A6F2B4A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HotdogsUITests/Pods-HotdogsUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HotdogsUITests/Pods-HotdogsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38555A59F9048172A4E3F063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotdogsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45C4BAE98E2FCD24522A8970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hotdogs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64DE63697EFE55CD9B05BA9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hotdogs/Pods-Hotdogs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hotdogs/Pods-Hotdogs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8948C0254ED01AA4D36E28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotdogsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EA1DBC52105969600F4E6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA1DBCF2105969600F4E6E1 /* ViewController.swift in Sources */,
+				6EA1DBCD2105969600F4E6E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBDC2105969800F4E6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1DBE72105969800F4E6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EA1DBE22105969800F4E6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA1DBC82105969600F4E6E1 /* Hotdogs */;
+			targetProxy = 6EA1DBE12105969800F4E6E1 /* PBXContainerItemProxy */;
+		};
+		6EA1DBED2105969800F4E6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA1DBC82105969600F4E6E1 /* Hotdogs */;
+			targetProxy = 6EA1DBEC2105969800F4E6E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EA1DBD02105969600F4E6E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA1DBD12105969600F4E6E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EA1DBD82105969800F4E6E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA1DBD92105969800F4E6E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EA1DBF22105969800F4E6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EA1DBF32105969800F4E6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EA1DBF52105969800F4E6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E3A7B85FE01440C49D2009 /* Pods-Hotdogs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hotdogs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.Hotdogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Firebase/";
+			};
+			name = Debug;
+		};
+		6EA1DBF62105969800F4E6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E98BAE3BC389F1F8A7DDF9 /* Pods-Hotdogs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hotdogs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.Hotdogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Firebase/";
+			};
+			name = Release;
+		};
+		6EA1DBF82105969800F4E6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CF24BD25B9571066693C87 /* Pods-HotdogsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+				);
+				INFOPLIST_FILE = HotdogsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.HotdogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotdogs.app/Hotdogs";
+			};
+			name = Debug;
+		};
+		6EA1DBF92105969800F4E6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5AE91A924FF92F99CBAA57 /* Pods-HotdogsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+				);
+				INFOPLIST_FILE = HotdogsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.HotdogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotdogs.app/Hotdogs";
+			};
+			name = Release;
+		};
+		6EA1DBFB2105969800F4E6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6AFD999E13C083BD46E698 /* Pods-HotdogsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+				);
+				INFOPLIST_FILE = HotdogsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.HotdogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hotdogs;
+			};
+			name = Debug;
+		};
+		6EA1DBFC2105969800F4E6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95633122B47ED2434266E134 /* Pods-HotdogsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VVQHZS45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/HotdogsFrameworks/Firebase/New\\ Group",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+				);
+				INFOPLIST_FILE = HotdogsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.HotdogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hotdogs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EA1DBC42105969600F4E6E1 /* Build configuration list for PBXProject "Hotdogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA1DBF22105969800F4E6E1 /* Debug */,
+				6EA1DBF32105969800F4E6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA1DBF42105969800F4E6E1 /* Build configuration list for PBXNativeTarget "Hotdogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA1DBF52105969800F4E6E1 /* Debug */,
+				6EA1DBF62105969800F4E6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA1DBF72105969800F4E6E1 /* Build configuration list for PBXNativeTarget "HotdogsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA1DBF82105969800F4E6E1 /* Debug */,
+				6EA1DBF92105969800F4E6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA1DBFA2105969800F4E6E1 /* Build configuration list for PBXNativeTarget "HotdogsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA1DBFB2105969800F4E6E1 /* Debug */,
+				6EA1DBFC2105969800F4E6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EA1DBC12105969600F4E6E1 /* Project object */;
+}
