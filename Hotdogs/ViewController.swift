@@ -62,7 +62,6 @@ extension ViewController {
         self.analyzeButton.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
         analyzeImageCloudly { (visionCloudLabels, error) in
-            self.analyzeButton.isEnabled = true
             guard error == nil else {
                 DispatchQueue.main.async {
                     self.label.text = error!.localizedDescription
@@ -123,7 +122,6 @@ extension ViewController {
 extension ViewController {
     func analyzeImageLocally(completionHandler: ((_ visionLabels: [VisionLabel]?,_ error: Error?) -> Void)? = nil) {
         guard let visionImage = imageView.getVisionImage() else { return }
-        
         localVisionLabelDetector.detect(in: visionImage) { (visionLabels: [VisionLabel]?, error: Error?) in
             guard let handler = completionHandler else { return }
             handler(visionLabels, error)
@@ -132,7 +130,6 @@ extension ViewController {
     
     func analyzeImageCloudly(completionHandler: ((_ visionCloudLabels: [VisionCloudLabel]?,_ error: Error?) -> Void)? = nil) {
         guard let visionImage = imageView.getVisionImage() else { return }
-        
         cloudVisionLabelDetector.detect(in: visionImage) { (visionCloudLabels: [VisionCloudLabel]?, error: Error?) in
             guard let handler = completionHandler else { return }
             handler(visionCloudLabels, error)
@@ -143,36 +140,28 @@ extension ViewController {
 extension ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         picker.dismiss(animated: true, completion: nil)
-
         if picker.allowsEditing {
-            guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else {
-                fatalError("No image found")
-            }
-            self.analyzeButton.isEnabled = true
-            self.analyzeButton.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+            guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else { fatalError("No image found") }
             imageView.image = image
         } else {
-            guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-                fatalError("No image found")
-            }
-            self.analyzeButton.isEnabled = true
-            self.analyzeButton.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+            guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { fatalError("No image found") }
             imageView.image = image
         }
-        
+        analyzeButton.isEnabled = true
+        analyzeButton.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         label.text = "Please analyze to find out"
         sublabel.text = ""
-        self.label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 }
 
 extension UIView {
     func setShadow() {
         self.layer.cornerRadius = 12.0
-        self.layer.shadowRadius = 4.0
+        self.layer.shadowRadius = 8.0
         self.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOpacity = 0.3
         self.layer.masksToBounds = false
     }
 }
