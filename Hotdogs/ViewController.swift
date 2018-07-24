@@ -91,9 +91,9 @@ extension ViewController {
                 self.sublabel.text = "It's may be \(visionCloudLabels[0].label!)"
             } else if visionCloudLabels.count > 1 {
                 if visionCloudLabels[0].confidence as! Double > 0.90 {
-                    self.sublabel.text = "It's probably a \(visionCloudLabels[0].label!)"
+                    self.sublabel.text = "It's may be a \(visionCloudLabels[0].label!)"
                 } else {
-                    self.sublabel.text = "It's probably a \(visionCloudLabels[0].label!) or \(visionCloudLabels[1].label!)"
+                    self.sublabel.text = "It's may be a \(visionCloudLabels[0].label!) or \(visionCloudLabels[1].label!)"
                 }
             }
         }
