@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var analyzeButton: UIButton!
     @IBOutlet weak var takePhotoButton: UIButton!
     
-    var imagePickerController: UIImagePickerController {
+    private lazy var imagePickerController: UIImagePickerController = {
         let controller = UIImagePickerController()
         controller.sourceType = .camera
         controller.delegate = self
         return controller
-    }
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,11 +119,11 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
 }
 
 class Firebase {
-    private var vision: Vision
-    
     static var shared: Firebase = {
         return Firebase()
     }()
+    
+    private var vision: Vision
     
     init() {
         self.vision = Vision.vision()
