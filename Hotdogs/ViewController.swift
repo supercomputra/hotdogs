@@ -49,7 +49,7 @@ extension ViewController {
         self.analyzeButton.isEnabled = false
         self.analyzeButton.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
-        Firebase.shared.analyzeImageCloudly(image) { (visionCloudLabels, error) in
+        FirebaseController.shared.analyzeImageCloudly(image) { (visionCloudLabels, error) in
             guard error == nil else {
                 DispatchQueue.main.async {
                     self.label.text = error!.localizedDescription
@@ -118,9 +118,9 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
     }
 }
 
-class Firebase {
-    static var shared: Firebase = {
-        return Firebase()
+class FirebaseController {
+    static var shared: FirebaseController = {
+        return FirebaseController()
     }()
     
     private var vision: Vision
