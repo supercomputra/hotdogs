@@ -49,17 +49,10 @@ extension ViewController {
         self.analyzeButton.isEnabled = false
         self.analyzeButton.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
-        FirebaseController.shared.analyzeImageCloudly(image) { (visionCloudLabels, error) in
+        FirebaseController.shared.getImageLabelOnCloud(image) { (visionCloudLabels, error) in
             guard error == nil else {
                 DispatchQueue.main.async {
                     self.label.text = error!.localizedDescription
-                }
-                return
-            }
-            
-            guard let visionCloudLabels = visionCloudLabels else {
-                DispatchQueue.main.async {
-                    self.label.text = "Couldn't find any object in the photo"
                 }
                 return
             }
@@ -70,11 +63,18 @@ extension ViewController {
         }
     }
     
-    private func displayResult(visionCloudLabels: [VisionCloudLabel]) {
+    private func displayResult(visionCloudLabels: [VisionCloudLabel]?) {
+        guard let visionCloudLabels = visionCloudLabels else {
+            DispatchQueue.main.async {
+                self.label.text = "Couldn't find any object in the photo"
+            }
+            return
+        }
+        
         var isHotDog = false
         for visionCloudLabel in visionCloudLabels {
             if visionCloudLabel.label == "hot dog" {
-                if visionCloudLabel.confidence as! Double > 0.5 {
+                if visionCloudLabel.confidence as! Double > 0.75 {
                     isHotDog = true
                     break
                 }
@@ -129,7 +129,7 @@ class FirebaseController {
         self.vision = Vision.vision()
     }
     
-    private lazy var localVisionLabelDetector: VisionLabelDetector = {
+    private lazy var visionLabelDetector: VisionLabelDetector = {
         return vision.labelDetector()
     }()
     
@@ -142,17 +142,17 @@ class FirebaseController {
         return VisionImage(image: resizedImage)
     }
 
-    typealias LocalImageLabellingCompletionHandler = ((_ visionLabels: [VisionLabel]?,_ error: Error?) -> Void)?
-    func analyzeImageLocally(_ image: UIImage, completionHandler: LocalImageLabellingCompletionHandler = nil) {
+    typealias ImageLabellingCompletionHandler = ((_ visionLabels: [VisionLabel]?,_ error: Error?) -> Void)?
+    func getImageLabel(_ image: UIImage, completionHandler: ImageLabellingCompletionHandler = nil) {
         let visionImage = getVisionImage(image)
-        localVisionLabelDetector.detect(in: visionImage) { (visionLabels: [VisionLabel]?, error: Error?) in
+        visionLabelDetector.detect(in: visionImage) { (visionLabels: [VisionLabel]?, error: Error?) in
             guard let handler = completionHandler else { return }
             handler(visionLabels, error)
         }
     }
     
     typealias CloudImageLabellingCompletionHandler = ((_ visionLabels: [VisionCloudLabel]?,_ error: Error?) -> Void)?
-    func analyzeImageCloudly(_ image: UIImage, completionHandler: CloudImageLabellingCompletionHandler = nil) {
+    func getImageLabelOnCloud(_ image: UIImage, completionHandler: CloudImageLabellingCompletionHandler = nil) {
         let visionImage = getVisionImage(image)
         visionCloudLabelDetector.detect(in: visionImage) { (visionCloudLabels: [VisionCloudLabel]?, error: Error?) in
             guard let handler = completionHandler else { return }
